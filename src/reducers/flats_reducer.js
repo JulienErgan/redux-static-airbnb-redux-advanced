@@ -1,5 +1,7 @@
-import flats from '../flats';
+// import flats from '../flats';
 
+import { SET_FLATS } from '../actions';
+ 
 export default function(state, action) {
     // compute and return the new state
     if (state === undefined) {
@@ -16,7 +18,7 @@ export default function(state, action) {
     // }
 
     switch(action.type) {
-        case 'SET_FLATS':
+        case SET_FLATS:
             return action.payload;
      default:
         return state;  

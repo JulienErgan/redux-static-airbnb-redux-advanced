@@ -21,6 +21,7 @@ class FlatList extends Component {
         // TODO: dispatch an action to update the Redux state tree (to load list of flats)
         // debugger
         this.props.setFlats();
+        // setTimeout(() => this.props.setFlats(), 3000);
     }
 
     render() {
